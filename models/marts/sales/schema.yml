@@ -1,0 +1,11 @@
+version : 2
+
+models:
+  - name: sales_aov_by_region
+    description: aggregate sales data on an order level
+    columns:
+      - name: order_id
+        description: "Primary Key for each order"
+        tests:
+          - not null
+          - unique
